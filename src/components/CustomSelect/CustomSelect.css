@@ -1,0 +1,68 @@
+.user_dropdown {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #bdbaba;
+    position: relative;
+}
+
+.selected_user_input {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: unset;
+    text-align: left;
+    position: relative;
+    font-size: 16px;
+}
+
+.selected_user_input::after {
+    content: "";
+    background-image: url("../../images/drop-down.png");
+    background-size: 100% 100%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 2px;
+    top: 6px;
+    opacity: 0.5;
+}
+
+.selected_user_input:hover:after {
+    opacity: 1;
+}
+
+.users_list {
+    width: 340px;
+    height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    list-style-type: none;
+    background-color: white;
+    padding: unset;
+    top: 15px;
+    display: none;
+    border: 1px solid #bdbaba;
+}
+.users_list.show_users {
+    display: block;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #bdbaba;
+}
+
+.user_image {
+    width: 50px;
+    height: 50px;
+}
+
+.user_name {
+    font-size: 15px;
+    margin-left: 10px;
+}

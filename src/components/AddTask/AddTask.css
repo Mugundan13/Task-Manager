@@ -1,0 +1,122 @@
+p.label{
+    margin-bottom: 5px;
+}
+.task_form {
+    width: 340px;
+    height: auto;
+    background-color: #def1f7;
+    border: 1px solid #bdbaba;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 4px #b9b5b5;
+}
+
+input {
+    width: 100%;
+    border: unset;
+    outline: 0;
+    height: 30px;
+    font-size: 16px;
+}
+
+.task_description_container{
+    position: relative;
+    width: 100%;
+}
+.task_description_container::after {
+    content: "";
+    background-image: url("../../images/descrption-icon.png");
+    background-size: 100% 100%;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 2px;
+    top: 6px;
+    opacity: 0.5;
+}
+.task_description_container:hover:after {
+    opacity: 1;
+}
+.small {
+    width: 155px;
+    background-color: white
+}
+.small input {
+    width: 155px;
+}
+.date_time {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+.button.edit_task {
+    justify-content: space-between;
+}
+.button {
+    width: 90px;
+    height: 35px;
+    background: unset;
+    border: unset;
+    cursor: pointer;
+}
+.button.cancel {
+    font-size: 14px;
+}
+.button.save {
+    background-color: #0de44b;
+    color: white;
+}
+
+.delete_icon {
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/delete-icon.png");
+    background-size: 100% 100%;
+    margin-right: auto;
+    cursor: pointer;
+}
+.e-input-group.e-control-wrapper:not(.e-float-icon-left) {
+    border: unset !important;
+}
+.e-input-group::before,
+.e-input-group::after {
+    display: none;
+}
+.e-input-group.e-control-wrapper input.e-input{
+    font-size: 16px;
+}
+
+.react-datepicker__input-container {
+    position: relative;
+}
+
+.react-datepicker__input-container::after {
+    content: "";
+    background-image: url("../../images/date-picker.png");
+    background-size: 100% 100%;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 2px;
+    top: 6px;
+    opacity: 0.5;
+}
+.react-datepicker__input-container:hover:after {
+    opacity: 1;
+}
+.e-float-input.e-control-wrapper textarea::selection {
+    background: unset;
+    color: #000;
+}
